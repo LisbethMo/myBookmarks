@@ -42,7 +42,7 @@
 		var button = tag('button', {textContent: '编辑', id: id})
 		button.onclick = function(xxx){
 		    var button2 = xxx['target']
-		    var img2 = button2.previousSibling
+		    var img2 = button2.nextSibling
 		    var key = button2['id']
 		    var site = prompt('给我一个网址')
 		    hash[key] = site
